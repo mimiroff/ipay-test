@@ -1,28 +1,112 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <AppHeader class="appHeader"></AppHeader>
+    <main class="main-content">
+      <div class="main-container">
+        <AppCheck class="appCheck"></AppCheck>
+        <AppCustomersTable
+          class="customersTable"
+          :customersData="customersData"
+        ></AppCustomersTable>
+        <div class="customers-list">
+          <AppCustomersListItem
+            class="customers-list__element"
+            v-for="(customer, index) in customersList"
+            :key=index
+            :customer="customer"
+          ></AppCustomersListItem>
+        </div>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppHeader from "./components/Header.vue";
+import AppCheck from "./components/CheckCredit.vue";
+import AppCustomersListItem from "./components/CustomersListItem.vue";
+import AppCustomersTable from "./components/CustomersTable.vue";
 
 export default {
   name: "app",
+  data() {
+    return {
+      customersList: [
+        {
+          title: "Bieri Brokerage, LLC - MC #74674 - Salt Lake City, UT",
+          tag: "Acceptable",
+          note: false
+        },
+        { title: "Sam Bokher Broker", tag: "", note: false },
+        {
+          title: "Sam Bokher Broker",
+          tag: "",
+          note: true
+        }
+      ],
+      customersData: [
+        {
+          name: "Bieri Brokerage, LLC - MC #74674 - Salt Lake City, UT",
+          invoices: 34,
+          lastInvoice: "02/03/19",
+          status: "Acceptable",
+          AR: "52,380"
+        },
+        {
+          name: "Coyote Logistics - Brooklyn, NY",
+          invoices: 54,
+          lastInvoice: "01/03/19",
+          status: "Moderate",
+          AR: "76,900"
+        },
+        {
+          name: "C.H. Robinson - Austin, TX",
+          invoices: 12,
+          lastInvoice: "01/02/19",
+          status: "Ineligible",
+          AR: "12,000"
+        }
+      ]
+    };
+  },
   components: {
-    HelloWorld
+    AppHeader,
+    AppCheck,
+    AppCustomersListItem,
+    AppCustomersTable
   }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "./assets/styles/style.css";
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.appCheck {
+  margin-bottom: 36px;
+}
+
+.main-container {
+  padding: 0 180px;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.appHeader {
+  margin-bottom: 45px;
+}
+
+.customers-list__element {
+  margin-bottom: 14px;
+}
+
+.customersTable {
+  margin-bottom: 160px;
 }
 </style>
