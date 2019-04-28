@@ -1,11 +1,7 @@
 <template>
   <section class="check">
     <h3 class="check__title">{{title}}</h3>
-    <input
-      class="check__input"
-      type="text"
-      :placeholder="placeholder"
-    >
+    <input class="check__input" type="text" :placeholder="placeholder">
   </section>
 </template>
 <script>

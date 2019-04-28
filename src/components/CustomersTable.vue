@@ -72,7 +72,7 @@ export default {
 }
 
 .customers-table__main-heading {
-  text-align: start;
+  text-align: left;
   color: #888888;
   border-bottom: 2px solid #d0d0d0;
   padding: 0 12px 16px 12px;
