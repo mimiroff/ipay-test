@@ -13,17 +13,20 @@ export default {
 
 <style scoped>
 .button {
-  font-family: inherit;
-  font-weight: bold;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
   color: #ffffff;
-  font-size: 100%;
-  line-height: 1.15;
   margin: 0;
   background-color: #4aa773;
   border: 1px solid #37a367;
   cursor: pointer;
-  box-shadow: 0 2px #2d8555;
-  padding: 10px 22px;
-  border-radius: 5px;
+  box-shadow: 0 2px 0 0 #2d8555;
+  padding: 8px 20px;
+  border-radius: 4px;
 }
 </style>

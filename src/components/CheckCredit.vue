@@ -13,7 +13,7 @@ export default {
   name: "CheckCredit",
   data() {
     return {
-      title: "Check Credit",
+      title: "Check credit",
       placeholder: "Enter broker MC#, DOT#, DBA name or legal name"
     };
   }
@@ -22,20 +22,26 @@ export default {
 
 <style>
 .check__title {
+  margin: 0;
   margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #373a3c;
 }
 
 .check__input {
-  width: 100%;
+  width: 962px;
   height: 46px;
   border: 1px solid #cccccc;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #ffffff;
-  padding: 0 11px;
-  font-size: 14px;
-  font-family: inherit;
-  line-height: inherit;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.1px;
 }
 </style>

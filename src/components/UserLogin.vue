@@ -23,7 +23,8 @@ export default {
 }
 
 .user-login__name {
-  color: #232323;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.86);
 }
 
 .user-login__image {

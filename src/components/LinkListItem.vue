@@ -20,13 +20,18 @@ export default {
 
 <style scoped>
 .link-list__item {
-  padding: 6px 16px;
+  padding: 5px 10px 7px 10px;
   display: inline-block;
 }
 
 .link-list__item-link {
-  color: #4a4a4a;
-  line-height: 1.15;
+  color: #1f1f1f;
+  opacity: 0.8;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   vertical-align: middle;
   text-decoration: none;
 }
@@ -34,11 +39,11 @@ export default {
 .active,
 .link-list__item:hover {
   background-color: #e0e7ec;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .active > .link-list__item-link,
 .link-list__item:hover > .link-list__item-link {
-  color: #1f1f1f;
+  opacity: 1;
 }
 </style>

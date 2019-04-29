@@ -1,5 +1,10 @@
-@font-face {
+/* @font-face {
   font-family: "Helvetica";
   src: url("./../fonts/HelveticaNeue.woff") format("woff"),
     url("./../fonts/HelveticaNeue.ttf") format("ttf");
+} */
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
 }

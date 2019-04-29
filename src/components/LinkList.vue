@@ -1,6 +1,7 @@
 <template>
   <ul class="link-list">
     <AppLinkListItem
+      class="link-list__item"
       v-for="(link, index) in links"
       :key="index"
       :link="link"
@@ -25,14 +26,20 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .link-list {
-  /* min-width: 200px; */
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.link-list__item {
+  margin-right: 28px;
+}
+
+.link-list__item:last-child {
+  margin-right: 0px;
 }
 </style>
