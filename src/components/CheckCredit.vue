@@ -23,7 +23,7 @@ export default {
 <style>
 .check__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 24px;
   font-weight: bold;
   line-height: 1;

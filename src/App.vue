@@ -79,7 +79,6 @@ export default {
 </script>
 
 <style>
-@import "./assets/styles/style.css";
 body {
   font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
