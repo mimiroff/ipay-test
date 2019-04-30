@@ -27,5 +27,7 @@ export default {
   font-family: inherit;
   color: #555555;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 </style>
