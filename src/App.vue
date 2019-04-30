@@ -33,7 +33,7 @@ export default {
     return {
       customersList: [
         {
-          title: "Bieri Brokerage, LLC - MC #74674 - Salt Lake City, UT",
+          title: "Bieri Brokerage, LLC - MC #74674  - Salt Lake City, UT",
           tag: "Acceptable",
           note: false
         },
@@ -46,7 +46,7 @@ export default {
       ],
       customersData: [
         {
-          name: "Bieri Brokerage, LLC - MC #74674 - Salt Lake City, UT",
+          name: "Bieri Brokerage, LLC - MC # 76569  - Salt Lake City, UT",
           invoices: 34,
           lastInvoice: "02/03/19",
           status: "Acceptable",
@@ -79,34 +79,39 @@ export default {
 </script>
 
 <style>
-@import "./assets/styles/style.css";
 body {
-  font-family: "Helvetica", sans-serif;
-  font-size: 14px;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .appCheck {
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 }
 
 .main-container {
-  padding: 0 180px;
   margin: 0 auto;
-  max-width: 1120px;
+  width: 998px;
 }
 
 .appHeader {
-  margin-bottom: 45px;
+  margin-bottom: 43px;
+}
+
+.customers-list {
+  margin-left: -7px;
 }
 
 .customers-list__element {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .customersTable {
-  margin-bottom: 160px;
+  margin-bottom: 164px;
 }
 </style>

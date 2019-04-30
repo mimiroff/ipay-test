@@ -21,15 +21,19 @@ export default {
 <style>
 .status-tag {
   width: 116px;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-radius: 18px;
-  padding: 6px 0;
+  border-radius: 20px;
+  padding: 2px 0;
   text-align: center;
 }
 
 .status-tag__title {
-  font-style: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
 }
 
 .tagStatusAcceptable {

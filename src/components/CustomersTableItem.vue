@@ -10,7 +10,10 @@
       {{customerData.lastInvoice}}
     </td>
     <td class="customers-table__item-cell">
-      <AppStatusTag :tagTitle="customerData.status"></AppStatusTag>
+      <AppStatusTag
+        class="AppStatusTag"
+        :tagTitle="customerData.status"
+      ></AppStatusTag>
     </td>
     <td class="customers-table__item-cell">
       {{customerData.AR | USD}}
@@ -30,15 +33,20 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .customers-table__item-cell {
-  text-align: start;
+  text-align: left;
   color: #373a3c;
-  border-bottom: 2px solid #efefef;
-  padding: 16px 12px;
+  line-height: 1.5;
+  border-bottom: 1px solid #efefef;
+  padding: 8px 10px 9px;
 }
 
 .customer-table__item-row:hover {
   background-color: #f8f8f8;
+}
+
+.AppStatusTag {
+  margin: 0;
 }
 </style>

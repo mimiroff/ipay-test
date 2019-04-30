@@ -39,7 +39,9 @@ export default {
 
 <style scoped>
 .main-header__logo {
-  margin-right: 40px;
+  margin-top: 3px;
+  margin-right: 37px;
+  margin-left: 1px;
 }
 .main-header {
   background-color: #f8f8f8;
@@ -47,10 +49,10 @@ export default {
 }
 
 .main-header__container {
-  padding: 0 80px;
+  padding: 0 79px 0 100px;
   margin: 0 auto;
-  max-width: 1320px;
-  height: 68px;
+  width: 1221px;
+  height: 69px;
   display: flex;
   align-items: center;
 }

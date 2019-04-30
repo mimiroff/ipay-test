@@ -53,13 +53,16 @@ export default {
 <style scoped>
 .customers-table__title {
   font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 18px;
+  color: #373a3c;
 }
 
 .customers-table__filter-group {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .periodFilter {
@@ -74,11 +77,30 @@ export default {
 .customers-table__main-heading {
   text-align: left;
   color: #888888;
-  border-bottom: 2px solid #d0d0d0;
-  padding: 0 12px 16px 12px;
+  border-bottom: 1px solid #cccccc;
+  padding: 0 10px 11px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .customers-table__main-heading:first-child {
-  width: 50%;
+  width: 500px;
+}
+
+.customers-table__main-heading:nth-child(2) {
+  width: 70px;
+}
+
+.customers-table__main-heading:nth-child(3) {
+  width: 109px;
+}
+
+.customers-table__main-heading:nth-child(4) {
+  width: 119px;
+}
+
+.customers-table__main-heading:last-child {
+  width: 98px;
 }
 </style>
