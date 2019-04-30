@@ -68,6 +68,6 @@ export default {
 }
 
 .appButton {
-  margin-right: 18px;
+  margin-right: 20px;
 }
 </style>
