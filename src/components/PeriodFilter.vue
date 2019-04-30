@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .customers-table__filter {
   width: 146px;
   height: 34px;
